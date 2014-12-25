@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>
+    <%= user.name %>
+    <% if(user.admin ) {%>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADNUlEQVRYR62XS2gTURSGnTxqENEIRXChbRWsGpuUJjE+cGVVFBeu2oDgSre6U1BciYLu6lZXgtB25UIUta6KYmxSmqlVI1RbXbgpWEUkNi+/UyYQw0zunYkDw0xzz+O///nPuVNjjccrHo/vwPWi5T6Sy+XmvYQyvDiJz8DAQN4wjKi812o1c3p6OuYllicAyWRya7Va/dKY0OfzbZuamvrqFoQnAJKEEmR47LMSvqEEKbfJxb4lAJJsrFQqtjbsuJMSnLVKcB9GluwA+P3+GuB+OIFzBEDyEZwueNmVjc8dQNQF+89yKwB3sTz3nwDcA8B5u1iOAKLRaE8gEHgPzWvbAUGH/CmXy7tN0/zsCoAY9/f336KGl9oBgIZuz8zMXHatAXFIpVIbSqWSCQtdXkCw+8VgMBjNZDI/PQEQJ0qxl1JMAiLsBgTJl6H+MNS/beWnNQcA0ctOHhJolyaIDzB3muQFlb0WACuIwQQ8QL9vVgRdQvGvsKmqksu6FgBmQhBKj3DHGEDi08V7T2MCSiQqXwRgjXc5J14ApKQCoQQQiUQ6QqHQLIF2qoI1rX8sFot9c3NzK21pANoPsquXLpOvmsPWIQ4oKYfjpWRAPCnBAx5D3AFNIGXsxinBGZW9FgAJwlAKM5R6UXcHbfm8eUJaE+8o3bLC8CkwfJZVybVF2BiID5Fhko/aBQdEmg+TMZ3EdRttBqxSbOFpcnc6JJEjOQr133RBaAOQVkSMjxHWYKvg2Exgc1KnBbVLQP27qb/QrvvVk0EHaXSwoGJCyYA1B94RSL6C3VzzzIE9nuYAdK/jIDnFrgcR3Cay9nLLYRRGaOv5zRY4azIFf2EnHSB3gZ++w8YEnfOIsvxu3oFtoEQiMYrjsJvtqmwBNpbNZtM6AAxa7RMO3aqgbtbZ0AItuh2fWqOfLQOxWOw4Sr4OiIQT3brJpSxcWbrjWj6ff6rDQN3Ghxae8Mcx3WQOds+o/QnWbI9nxy6g9a4gwhttJl91R4RXacmbdrFsAfAFtJ+ZPomD7uGjwlnmDJHPs9daJYB6Gbd9qqgu12cpxeo/s0oRShsimqF2BVhPJCpE1ON2bfgXpIRCMEdyraoAAAAASUVORK5CYII=" alt=""/>
+    <%} else {%>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABK0lEQVRIS9WV4Q2CMBBGKSyAG+gGCAs4gm4AG8gkuAFsICO4AMgGugEsAPjVxKQB2rtEU5W/Nvf87l6vwrH0CUsc5/dAQRCsPc/LxnHcyS4IIS5936dN09w5XWElkhDXda8o7qtFAe2GYdhyYCxQFEVnAPaaf15WVXWgUrFAYRi20zSvwjJVXder/wJZa501GWT/kUrKIKVQvwNEKKn5PK8D5xBkyCFDvHQWMhSQIaHqsEBIM5oKIRVZhzwgAdYSQQYfm+Gm2QwbbIbuI61DogyQo2ZGJ8wofRsESAxIbioEIRLACtMZ44w4EGUVGWFakJwLnoWWaon6u8m+GchkGBe6dLdmIOrOcGHTdN9LRF1QKpFuJS0lInVmwGYGLoG0rykFUFSfvbrWZHgARN2vGzmtNk0AAAAASUVORK5CYII=" alt=""/>
+    <%}%>
+  </h1>
+  <h3>
+    <%= user.title %>
+  </h3>
+  <hr/>
+  <h3>contact : <%= user.email %></h3>
+
+  <a href="/user/edit/<%= user.id %>" class="btn btn-primary">Edit</a>
+</div>
