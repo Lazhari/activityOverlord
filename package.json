@@ -22,7 +22,7 @@
     "grunt-contrib-cssmin": "~0.9.0",
     "grunt-contrib-less": "1.0.0",
     "grunt-contrib-coffee": "~0.10.1",
-    "sails-mongo": "~0.10.4",
+    "sails-mongo": "~2.0.0",
     "bcrypt": "~0.8.0"
   },
   "scripts": {
